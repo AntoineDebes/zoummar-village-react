@@ -2,3 +2,15 @@
   --max-width: 1200px;
   --primary-color: rgb(49, 189, 49);
 }
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 72px auto 90px;
+}
+
+.wrapper > * {
+  grid-column: span 4;
+  width: 100%;
+}
