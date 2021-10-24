@@ -1,0 +1,15 @@
+.wrapper__hero__container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hero__container__img {
+  width: 50%;
+  position: relative;
+}
+
+.hero__container__img > img {
+  width: 100%;
+}
