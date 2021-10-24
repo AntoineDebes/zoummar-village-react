@@ -11,6 +11,6 @@
 }
 
 .wrapper > * {
-  grid-column: span 4;
   width: 100%;
+  grid-column: span 4;
 }
