@@ -2,16 +2,44 @@
   width: 100%;
   max-width: 1600px;
   display: flex;
-}
-
-.hero__container__img {
-  width: 80%;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.hero__container__img > img {
+.hero__container__img {
   width: 100%;
 }
+
+.hero__container__img img {
+  width: 100%;
+  max-height: 600px;
+}
+
+.slick-prev {
+  left: 25px !important;
+  z-index: 100;
+}
+
+.slick-next {
+  right: 50px !important;
+  z-index: 100;
+}
+
 .slick-arrow.slick-prev::before {
   color: black !important ;
+  font-size: 50px !important;
+}
+
+.slick-arrow.slick-next::before {
+  color: black !important ;
+  font-size: 50px !important;
+}
+
+.slick-dots {
+  margin-bottom: 30px !important;
+  background-color: green;
+}
+
+.slick-dots li button:before {
+  font-size: 30px !important;
 }
