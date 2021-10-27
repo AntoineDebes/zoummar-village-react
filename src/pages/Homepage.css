@@ -2,14 +2,16 @@
   width: 100%;
   max-width: 1600px;
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .hero__container__img {
-  width: 50%;
-  position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .hero__container__img > img {
   width: 100%;
+}
+.slick-arrow.slick-prev::before {
+  color: black !important ;
 }
