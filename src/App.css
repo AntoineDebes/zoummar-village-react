@@ -21,3 +21,8 @@
 .container {
   max-width: var(--max-width);
 }
+
+@font-face {
+  font-family: 'Lobster-Regular';
+  src:  url('./assets/fonts/Lobster-Regular.ttf') format('ttf');
+}

@@ -47,3 +47,8 @@
 .header__container__login--primary > button {
   background-color: var(--primary-color);
 }
+
+a{
+  text-decoration: none;
+  font-family:'Lobster-Regular'; 
+}
