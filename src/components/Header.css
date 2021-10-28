@@ -6,20 +6,26 @@
   align-items: center;
   max-width: var(--max-width);
   height: 72px;
-  position: relative;
+  position: fixed;
+  background-color: rgba(46, 204, 113, 0.5);
+  top: -4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+  backdrop-filter: blur(4px);
 }
-
+/* 
 .header__container__logo::before {
   content: "";
-  background-color: rgba(30, 30, 30, 0.2);
-  filter: blur(4px);
+  background-color: rgba(46, 204, 113, 0.5);
+
   position: absolute;
   top: 0;
   left: 0;
   z-index: -10;
   width: 100%;
   height: 100%;
-}
+} */
 
 .header__container__logo {
   width: 150px;

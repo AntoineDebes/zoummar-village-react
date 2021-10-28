@@ -9,7 +9,8 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 72px repeat(2, auto) 90px;
+  grid-template-rows: repeat(2, auto) 90px;
+  row-gap: 2rem;
 }
 
 .wrapper > * {
