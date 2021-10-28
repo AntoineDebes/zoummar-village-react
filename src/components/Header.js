@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/electricity-power-plant.jpg";
+import { Logo } from "../assets/images";
 
 function Header() {
   return (

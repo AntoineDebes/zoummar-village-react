@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../assets/images/electricity-power-plant.jpg";
+import { Logo } from "../assets/images";
 
 function Footer() {
   return (

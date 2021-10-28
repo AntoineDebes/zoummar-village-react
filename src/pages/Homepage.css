@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1600px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
@@ -42,4 +43,14 @@
 
 .slick-dots li button:before {
   font-size: 30px !important;
+}
+
+.wrapper__content__title {
+  text-align: center;
+}
+
+.wrapper__hero__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
