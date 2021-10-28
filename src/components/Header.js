@@ -5,18 +5,20 @@ import { Logo } from "../assets/images";
 
 function Header() {
   return (
-    <div className="wrapper__header__container">
-      <div className="header__container__logo">
-        <img src={Logo} alt="Logo" />
-      </div>
-      <div className="header__container__nav-pages">
-        <Link to="">Homepage</Link>
-        <Link to="">Activities</Link>
-        <Link to="">Restaurent</Link>
-        <Link to="">About-us</Link>
-      </div>
-      <div className="header__container__login--primary">
-        <button>Login</button>
+    <div className="wrapper__header">
+      <div className="wrapper__header__container">
+        <div className="header__container__logo">
+          <img src={Logo} alt="Logo" />
+        </div>
+        <div className="header__container__nav-pages">
+          <Link to="">Homepage</Link>
+          <Link to="">Activities</Link>
+          <Link to="">Restaurent</Link>
+          <Link to="">About-us</Link>
+        </div>
+        <div className="header__container__login--primary">
+          <button>Login</button>
+        </div>
       </div>
     </div>
   );

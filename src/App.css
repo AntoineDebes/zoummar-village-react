@@ -1,6 +1,7 @@
 :root {
   --max-width: 1200px;
   --primary-color: rgb(49, 189, 49);
+  /* font-size: calc(9px + 0.3vw); */
 }
 
 .wrapper {
@@ -11,6 +12,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto) 90px;
   row-gap: 2rem;
+  font-family: "Lobster";
 }
 
 .wrapper > * {
@@ -23,6 +25,7 @@
 }
 
 @font-face {
-  font-family: 'Lobster-Regular';
-  src:  url('./assets/fonts/Lobster-Regular.ttf') format('ttf');
+  font-family: "Lobster";
+  src: local("Lobster"),
+    url(./assets/fonts/Lobster-Regular.ttf) format("truetype");
 }

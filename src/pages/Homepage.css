@@ -1,4 +1,5 @@
 .wrapper__hero__container {
+  padding-top: 80px;
   width: 100%;
   max-width: 1600px;
   display: flex;
@@ -18,12 +19,12 @@
 
 .slick-prev {
   left: 25px !important;
-  z-index: 100;
+  z-index: 50;
 }
 
 .slick-next {
   right: 50px !important;
-  z-index: 100;
+  z-index: 50;
 }
 
 .slick-arrow.slick-prev::before {
@@ -36,16 +37,16 @@
   font-size: 50px !important;
 }
 
-.slick-dots {
+/* .slick-dots {
   margin-bottom: 30px !important;
-  background-color: green;
-}
+} */
 
 .slick-dots li button:before {
   font-size: 30px !important;
 }
 
 .wrapper__content__title {
+  padding-top: 2rem;
   text-align: center;
 }
 
