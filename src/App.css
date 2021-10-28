@@ -1,7 +1,8 @@
 :root {
   --max-width: 1200px;
   --primary-color: rgb(49, 189, 49);
-  /* font-size: calc(9px + 0.3vw); */
+  --background-color: rgba(235, 235, 235, 1);
+  font-size: calc(13px + 0.2vw);
 }
 
 .wrapper {
@@ -12,7 +13,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto) 90px;
   row-gap: 2rem;
-  font-family: "Lobster";
+  background-color: var(--background-color);
 }
 
 .wrapper > * {

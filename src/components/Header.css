@@ -33,7 +33,7 @@
 } */
 
 .header__container__logo {
-  width: 150px;
+  width: 180px;
 }
 
 .header__container__logo > img {
@@ -47,6 +47,10 @@
   min-width: 350px;
   justify-content: space-around;
   flex-direction: row;
+}
+
+.header__container__nav-pages > * {
+  font-family: "Lobster";
 }
 
 .header__container__login--primary > button {
