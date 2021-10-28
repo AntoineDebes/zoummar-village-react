@@ -5,6 +5,9 @@
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .wrapper__content__card-right-img {
@@ -14,14 +17,19 @@
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .wrapper__content__card__img__container-left-img {
+  display: flex;
   clip-path: polygon(0 0, 100% 0, 61% 100%, 0 100%);
   width: 60%;
 }
 
 .wrapper__content__card__img__container-right-img {
+  display: flex;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%);
   width: 60%;
 }
