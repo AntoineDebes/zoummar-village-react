@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomepageCard.css";
+import PropTypes from "prop-types";
 
 function HomepageCard({ direction, picture, ...props }) {
   return (
@@ -27,5 +28,10 @@ function HomepageCard({ direction, picture, ...props }) {
     </div>
   );
 }
+
+HomepageCard.propType = {
+  direction: PropTypes.string,
+  picture: PropTypes.string,
+};
 
 export default HomepageCard;

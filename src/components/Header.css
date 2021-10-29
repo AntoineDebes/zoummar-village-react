@@ -19,18 +19,6 @@
   width: 100%;
   height: 80px;
 }
-/* 
-.header__container__logo::before {
-  content: "";
-  background-color: rgba(46, 204, 113, 0.5);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-} */
 
 .header__container__logo {
   width: 180px;

@@ -7,3 +7,4 @@ export { default as TruckDriver } from "./wp-truck-driver.jpeg";
 export { default as Image } from "./electricity-power-plant.jpg";
 export { default as Logo } from "./Logo.png";
 export { default as Picnic } from "./Picnic.png";
+export { default as Download } from "./download.jpeg";

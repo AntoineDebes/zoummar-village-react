@@ -1,3 +1,14 @@
 .wrapper {
   grid-template-rows: auto 90px;
 }
+
+.wrapper__container {
+  grid-column: span 4;
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  place-items: center;
+  max-width: var(--max-width);
+}

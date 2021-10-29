@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
-// import Activities from "./pages/Activities";
+import Activities from "./pages/Activities";
 import Homepage from "./pages/Homepage";
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
       <div className="wrapper" id="wrapper">
         <Header />
-        <Homepage />
+        {/* <Homepage /> */}
+        <Activities />
         <Footer />
       </div>
     </BrowserRouter>
