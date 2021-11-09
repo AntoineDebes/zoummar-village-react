@@ -1,0 +1,9 @@
+export { default as CookDinner } from "./cook_dinner.png";
+export { default as CookBreakfast } from "./cook_breakfast.png";
+export { default as CookDessert } from "./cook_dessert.png";
+export { default as CookLunch } from "./cook_lunch.png";
+export { default as CookToo } from "./cook_02.jpg";
+export { default as CookTree } from "./cook_01.jpg";
+export { default as BeakFastMenu } from "./breakfast_menu.jpg";
+export { default as BreakfastItem } from "./breakfast_item.jpg";
+export { default as BookLeftImage } from "./book_left_image.jpg";

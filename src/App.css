@@ -4,6 +4,12 @@
     url(./assets/fonts/Lobster-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular"),
+    url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
 :root {
   --max-width: 1200px;
   --primary-color: rgb(49, 189, 49);
