@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../css/bootstrap.min.css";
 import "../css/fontAwesome.css";
 import "../css/bootstrap-theme.min.css";
@@ -18,6 +18,13 @@ import {
 import { Link } from "react-router-dom";
 
 function Restaurent() {
+  const formSubmit = useRef(null);
+
+  const executeScroll = () =>
+    formSubmit.current.scrollIntoView({
+      behavior: "smooth",
+    });
+
   return (
     <div className="wrapper__restaurent__container">
       <div className="header" style={{ backgroundColor: "transparent" }}>
@@ -65,7 +72,12 @@ function Restaurent() {
                 Donec lectus odio, mollis a nisl non, tempor interdum nisl.
               </p>
               <div className="primary-button">
-                <a href="#" className="scroll-link" data-id="book-table">
+                <a
+                  href="#"
+                  className="scroll-link"
+                  data-id="book-table"
+                  onClick={executeScroll}
+                >
                   Book a Table
                 </a>
               </div>
@@ -91,7 +103,11 @@ function Restaurent() {
                 </div>
                 <span>or</span>
                 <div className="primary-white-button">
-                  <a href="#" className="scroll-link" data-id="book-table">
+                  <a
+                    href="#form-submit"
+                    className="scroll-link"
+                    data-id="book-table"
+                  >
                     Book a Table Now
                   </a>
                 </div>
@@ -164,7 +180,7 @@ function Restaurent() {
             <div className="col-md-4 col-sm-12">
               <div className="right-info">
                 <h4>Reservation</h4>
-                <form id="form-submit" action="" method="get">
+                <form id="form-submit" action="" method="get" ref={formSubmit}>
                   <div className="row">
                     <div className="col-md-6">
                       <fieldset>

@@ -22,7 +22,7 @@ function Header() {
             <FiLogIn /> Sign up
           </button>
           <button>
-            <FiLogIn /> Login
+            <FiLogIn /> Sign in
           </button>
         </div>
       </div>
