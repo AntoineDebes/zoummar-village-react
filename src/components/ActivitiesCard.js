@@ -2,7 +2,7 @@ import React from "react";
 import "./ActivitiesCard.css";
 import PropTypes from "prop-types";
 
-function ActivitiesCard({ picture, ...props }) {
+function ActivitiesCard({ picture, title, description }) {
   console.log(picture);
   return (
     <div className="wrapper__container__card">
@@ -11,13 +11,10 @@ function ActivitiesCard({ picture, ...props }) {
       </div>
       <div className="card__content">
         <div className="card__content__title">
-          <h2>Hiking</h2>
+          <h2>{title}</h2>
         </div>
         <div className="card__content__paragraph">
-          <p>
-            Hking is something very impportnant to our life because our life
-            sucks so we must suck...
-          </p>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -25,6 +22,8 @@ function ActivitiesCard({ picture, ...props }) {
 }
 ActivitiesCard.propTypes = {
   picture: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default ActivitiesCard;

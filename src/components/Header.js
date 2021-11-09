@@ -11,8 +11,8 @@ function Header() {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="header__container__nav-pages">
-          <Link to="">Homepage</Link>
-          <Link to="">Activities</Link>
+          <Link to="/">Homepage</Link>
+          <Link to="/activities">Activities</Link>
           <Link to="">Restaurent</Link>
           <Link to="">About-us</Link>
         </div>

@@ -1,8 +1,9 @@
 .wrapper {
-  grid-template-rows: auto 90px;
+  /* grid-template-rows: auto 90px; */
 }
 
 .wrapper__container {
+  padding-top: 2rem;
   grid-column: span 4;
   display: grid;
   row-gap: 3rem;

@@ -5,13 +5,12 @@ export const FetchApi = ({ method, fetchApiUrl, selectedIds }) => {
 
   return new Promise((res, rej) => {
     Axios({
-      method: method, // Method like GET, POST, DELETE, PUT ...
+      method: method,
       url: `${process.env.REACT_APP_API_URL}${fetchApiUrl}`,
       headers: {
-        Authorization: token, // sending the token for the verification
+        Authorization: token,
       },
       data: {
-        // This section is for the deleted ids it sends in the body
         ids: selectedIds,
       },
     })
@@ -24,5 +23,3 @@ export const FetchApi = ({ method, fetchApiUrl, selectedIds }) => {
       });
   });
 };
-
-// http://batata-harra-financial.herokuapp.com/

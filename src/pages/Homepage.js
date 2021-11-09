@@ -57,7 +57,6 @@ function Homepage() {
         <HomepageCard picture={Picnic} direction="left" />
         <HomepageCard picture={Picnic} direction="right" />
         <HomepageCard picture={Picnic} direction="left" />
-        <HomepageCard picture={Picnic} direction="right" />
       </div>
     </>
   );

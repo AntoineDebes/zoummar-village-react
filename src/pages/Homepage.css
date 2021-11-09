@@ -36,9 +36,9 @@
   font-size: 50px !important;
 }
 
-/* .slick-dots {
-  margin-bottom: 30px !important;
-} */
+.slick-dots {
+  margin-bottom: 40px !important;
+}
 
 .slick-dots li button:before {
   font-size: 30px !important;
@@ -53,4 +53,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.slick-arrow.slick-next::before {
+  color: white !important;
+}
+
+.slick-arrow.slick-prev::before {
+  color: white !important;
 }

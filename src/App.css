@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"),
+    url(./assets/fonts/Lobster-Regular.ttf) format("truetype");
+}
+
 :root {
   --max-width: 1200px;
   --primary-color: rgb(49, 189, 49);
@@ -13,7 +19,6 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto) 90px;
   row-gap: 2rem;
   background-color: var(--background-color);
 }
@@ -25,10 +30,4 @@
 
 .container {
   max-width: var(--max-width);
-}
-
-@font-face {
-  font-family: "Lobster";
-  src: local("Lobster"),
-    url(./assets/fonts/Lobster-Regular.ttf) format("truetype");
 }
