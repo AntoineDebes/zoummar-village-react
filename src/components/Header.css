@@ -5,7 +5,7 @@
   top: -4px;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 9999;
+  z-index: 100;
   backdrop-filter: blur(4px);
 }
 
@@ -75,7 +75,7 @@
 
 .header__container__login--primary {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 210px;
 }
 

@@ -265,9 +265,16 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: local("Glyphicons Halflings"), url('./fonts/glyphicons-halflings-regular.eot');
-  src: local("Glyphicons Halflings"), url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: "Glyphicons Halflings";
+  src: local("Glyphicons Halflings"),
+    url("./fonts/glyphicons-halflings-regular.eot");
+  src: local("Glyphicons Halflings"),
+    url("./fonts/glyphicons-halflings-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("./fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+    url("./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")
+      format("svg");
 }
 .glyphicon {
   position: relative;
@@ -2484,7 +2491,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #eee;
+  /* background-color: #eee; */
   opacity: 1;
 }
 textarea.form-control {
@@ -3232,7 +3239,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 .fade {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
@@ -5293,7 +5300,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: rgba(220, 220, 220, 1) !important;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -6357,9 +6364,6 @@ button.close {
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
   background-color: #fff;
 }
 .carousel-caption {

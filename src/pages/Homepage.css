@@ -62,3 +62,14 @@
 .slick-arrow.slick-prev::before {
   color: white !important;
 }
+
+.wrapper__form__close__btn-container {
+  position: absolute;
+  top: 12px;
+  z-index: 100;
+  right: 12px;
+}
+
+.wrapper__form__close__btn-container {
+  color: black;
+}

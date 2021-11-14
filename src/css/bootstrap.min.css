@@ -2483,7 +2483,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #eee;
+  /* background-color: #eee; */
   opacity: 1;
 }
 textarea.form-control {
@@ -3231,7 +3231,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 .fade {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
@@ -6355,9 +6355,6 @@ button.close {
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
   background-color: #fff;
 }
 .carousel-caption {

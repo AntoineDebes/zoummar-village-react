@@ -1,25 +1,29 @@
 import Axios from "axios";
+import { SERVER_URL } from "../constants/URLS";
 
-export const FetchApi = ({ method, fetchApiUrl, selectedIds }) => {
+export const AxiosCustomAPI = ({ method, ApiUrl, toSendData }) => {
   const token = localStorage.getItem("login") ?? "";
 
+  console.log(toSendData);
   return new Promise((res, rej) => {
     Axios({
       method: method,
-      url: `${process.env.REACT_APP_API_URL}${fetchApiUrl}`,
+      url: `${SERVER_URL}${ApiUrl}`,
       headers: {
         Authorization: token,
       },
       data: {
-        ids: selectedIds,
+        data: toSendData,
       },
     })
       .then((response) => {
+        console.log(response);
         res(response);
       })
-      .catch((e) => {
+      .catch((err) => {
+        console.log(err);
         localStorage.clear();
-        rej(e);
+        rej(err);
       });
   });
 };

@@ -6,4 +6,7 @@ export { default as CookToo } from "./cook_02.jpg";
 export { default as CookTree } from "./cook_01.jpg";
 export { default as BeakFastMenu } from "./breakfast_menu.jpg";
 export { default as BreakfastItem } from "./breakfast_item.jpg";
+export { default as TeamTwo } from "./team/2.jpg";
 export { default as BookLeftImage } from "./book_left_image.jpg";
+export { default as HeroCarouselOne } from "./hero-carousel/1.jpg";
+export { default as HeroCarouselTwo } from "./hero-carousel/2.jpg";
