@@ -3239,10 +3239,6 @@ input[type="button"].btn-block {
 .fade.in {
   opacity: 1;
 }
-.collapse {
-  display: none;
-  visibility: hidden;
-}
 .collapse.in {
   display: block;
   visibility: visible;
@@ -3963,7 +3959,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
   .navbar-collapse.collapse {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -6403,8 +6401,6 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-.container:before,
-.container:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -6417,8 +6413,6 @@ button.close {
 .btn-group-vertical > .btn-group:after,
 .nav:before,
 .nav:after,
-.navbar:before,
-.navbar:after,
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,

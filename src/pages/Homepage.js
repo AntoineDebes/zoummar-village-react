@@ -155,25 +155,25 @@ function Homepage() {
             <div className="row">
               <HomepageOurTeam
                 img={TeamTwo}
-                job="gay"
+                job="123"
                 link="facebook.com"
                 name="He/him"
               />
               <HomepageOurTeam
                 img={TeamTwo}
-                job="gay"
+                job="123"
                 link="facebook.com"
                 name="He/him"
               />
               <HomepageOurTeam
                 img={TeamTwo}
-                job="gay"
+                job="123"
                 link="facebook.com"
                 name="He/him"
               />
               <HomepageOurTeam
                 img={TeamTwo}
-                job="gay"
+                job="123"
                 link="facebook.com"
                 name="He/him"
               />

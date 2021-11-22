@@ -303,7 +303,7 @@ body {
 }
 
 .btn-register {
-  background-color: #755c9e;
+  background-color: var(--primary-color);
   outline: none;
   color: #fff;
   font-size: 14px;
@@ -311,7 +311,7 @@ body {
   font-weight: normal;
   padding: 14px 0;
   text-transform: uppercase;
-  border-color: #755c9e;
+  border-color: var(--primary-color);
   border-radius: 50px;
 }
 .btn-register:hover,
@@ -319,6 +319,10 @@ body {
   color: #fff;
   background-color: #222222;
   border-color: #222222;
+}
+
+.col-lg-6.col-sm-6.col-xl-6 {
+  cursor: pointer;
 }
 
 form .form-group {
@@ -461,7 +465,7 @@ form .form-group .icon-lp {
 }
 
 .checkbox-in a {
-  color: #755c9e;
+  color: var(--primary-color);
 }
 
 .footer-company-name {

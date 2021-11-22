@@ -7,8 +7,10 @@ export function useUserCredential() {
 }
 
 export function UserCredentialProvider({ children }) {
-  const localStorageUsername = localStorage.getItem("UserCredential"); // Checkes if isAuth inside the localstorage is true
-  const [userCredential, setUserCredential] = useState(localStorageUsername);
+  const localStorageUserCredential = localStorage.getItem("UserCredential"); // Checkes if isAuth inside the localstorage is true
+  const [userCredential, setUserCredential] = useState(
+    localStorageUserCredential
+  );
 
   return (
     <>

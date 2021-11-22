@@ -27,7 +27,7 @@
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 50;
 }
 
 .card__img__container > img {

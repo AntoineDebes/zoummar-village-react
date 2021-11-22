@@ -1,18 +1,24 @@
 import React, { useState, useRef } from "react";
-import { useHistory } from "react-router-dom";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { Logo } from "../assets/images";
 import { FiLogIn } from "react-icons/fi";
-import { Modal, Button } from "react-bootstrap";
+import {
+  Modal,
+  Button,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Container,
+} from "react-bootstrap";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "./css/all.min.css";
 import "./css/bootstrap.min.css";
 import "./css/responsive.css";
 import "./css/style.css";
-import axios from "axios";
 import { AxiosCustomAPI } from "../apis/Api";
 import { useUserCredential } from "../context/UserCredentialContext";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -41,23 +47,22 @@ function Header() {
       Email: data.emailLogin,
       Password: data.passwordLogin,
     };
-    let sexy = AxiosCustomAPI({
-      method: "POST",
-      toSendData: params,
-      ApiUrl: "users/login",
-    })
-      .then((res) => {
-        console.log(sexy);
-        if (res) {
-          localStorage.setItem("UserCredential", res);
-          setUserCredential(res.data);
-          return setShow(false);
-        }
-      })
-      .catch(() => {
-        localStorage.clear();
-        setUserCredential(null);
-      });
+    AxiosCustomAPI(
+      {
+        method: "POST",
+        toSendData: params,
+        ApiUrl: "users/login",
+      },
+      () => {}
+    ).then((res) => {
+      console.log(res.data.user);
+      if (res) {
+        localStorage.setItem("UserCredential", JSON.stringify(res.data.user));
+        setUserCredential(res.data.user);
+        return setShow(false);
+      } else {
+      }
+    });
   };
 
   const onSubmitRegister = (data) => {
@@ -77,6 +82,7 @@ function Header() {
         localStorage.setItem("UserCredential", res);
         setUserCredential(res);
         setShow(false);
+        return;
       }
     });
   };
@@ -84,22 +90,71 @@ function Header() {
   return (
     <>
       <div className="wrapper__header">
-        <div className="wrapper__header__container">
-          <div className="header__container__logo">
+        <Navbar
+          expand="lg"
+          style={{ padding: "0 0 3px 0", border: "0", marginBottom: "0" }}
+        >
+          <Container
+            style={{
+              maxWidth: "100%",
+              padding: "0 16px",
+              backgroundColor: "rgba(250,250,250,0.9)",
+            }}
+          >
+            <Navbar.Brand
+              className="header__container__logo"
+              style={{ width: "auto" }}
+            >
+              <img src={Logo} alt="Logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse
+              id="basic-navbar-nav"
+              className="override__container"
+            >
+              <Nav className="me-auto">
+                <Nav.Link as={Link} to="/">
+                  Homepage
+                </Nav.Link>
+                <Nav.Link as={Link} to="/activities">
+                  activities
+                </Nav.Link>
+                <Nav.Link as={Link} to="/restaurent">
+                  restaurent
+                </Nav.Link>
+                <Nav.Link as={Link} to="/restaurent">
+                  About-us
+                </Nav.Link>
+              </Nav>
+              <Nav className="header__container__login--primary">
+                <button
+                  variant="primary"
+                  onClick={handleShow}
+                  className="nav__bar__login___btn"
+                >
+                  <FiLogIn /> Log-In
+                </button>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        {/* <Navbar className="wrapper__header__container">
+          <Navbar.Brand className="header__container__logo">
             <img src={Logo} alt="Logo" />
-          </div>
-          <div className="header__container__nav-pages">
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav" className="header__container__nav-pages">
             <Link to="/">Homepage</Link>
             <Link to="/activities">Activities</Link>
             <Link to="/restaurent">Restaurent</Link>
             <Link to="">About-us</Link>
-          </div>
+          </Navbar.Collapse>
           <div className="header__container__login--primary">
             <button variant="primary" onClick={handleShow}>
               <FiLogIn /> Log-In
             </button>
           </div>
-        </div>
+        </Navbar> */}
       </div>
       <Modal
         show={show}
