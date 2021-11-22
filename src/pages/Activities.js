@@ -19,7 +19,7 @@ function Activities() {
       <LinkctivitiesCard picture={Download} title="Hiking" description={desc} /> */}
       <div class="container__activities_new">
         <div class="cards">
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -35,7 +35,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -53,7 +53,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -70,7 +70,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -86,7 +86,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -102,7 +102,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -119,7 +119,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -135,7 +135,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}
@@ -151,7 +151,7 @@ function Activities() {
             <span class="card-meta">Published: June 18th, 2015</span>
           </Link>
 
-          <Link class="card" href="#">
+          <Link class="card" to="activitiesaftercard">
             <span
               class="card-header"
               style={{ backgroundImage: `url(${Download})` }}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import Activities from "../pages/Activities";
+import ActivitiesAfterCard from "../pages/ActivitiesAfterCard";
 // import { useAuth } from "../useContext/IsAuthContext";
 import Homepage from "../pages/Homepage";
 import Restaurent from "../pages/Restaurent";
@@ -25,6 +26,7 @@ function Routes() {
           <Route path="/activities" component={Activities} />
           <Route exact path="/restaurent" component={Restaurent} />
           <Route path="/restaurent/menu" component={RestaurentMenu} />
+          <Route path="/activitiesaftercard" component={ActivitiesAfterCard} />
         </Switch>
         <Footer />
       </div>

@@ -113,7 +113,7 @@
   font-size: 0.78em;
   text-transform: uppercase;
   position: absolute;
-  bottom: 5%;
+  bottom: 3.5%;
   padding: 0 5%;
   -webkit-transition-property: max-height;
   transition-property: max-height;
@@ -137,7 +137,7 @@
 
 .card:hover .card-meta,
 .card:focus .card-meta {
-  max-height: 1em;
+  max-height: 1.5em;
 }
 
 img {

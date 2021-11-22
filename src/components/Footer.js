@@ -2,57 +2,97 @@ import React from "react";
 import "./Footer.css";
 import { Logo } from "../assets/images";
 import "./css/mariaFooter.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="wrapper__footer">
-      <div className="wrapper__footer__container">
-        <div className="wrapper__footer__container__img">
-          <img src={Logo} alt="" />
-        </div>
-        <div className="wrapper__footer__container__contacts">
-          <div>
-            <i></i>
-            <p>info@zoummarvillage.com</p>
+    <div id="footer">
+      <div className="footer-top">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 footer-info">
+              <h3>NewBiz</h3>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                nada terra videa magna derita valies darta donna mare fermentum
+                iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
+                fermentum leo. Amet volutpat consequat mauris nunc congue.
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <Link to="#">Home</Link>
+                </li>
+                <li>
+                  <Link to="#">About us</Link>
+                </li>
+                <li>
+                  <Link to="#">Services</Link>
+                </li>
+                <li>
+                  <Link to="#">Terms of service</Link>
+                </li>
+                <li>
+                  <Link to="#">Privacy policy</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022
+                <br />
+                United States <br />
+                <strong>Phone:</strong> +1 5589 55488 55
+                <br />
+                <strong>Email:</strong> info@example.com
+                <br />
+              </p>
+
+              <div className="social-links">
+                <Link to="#" className="twitter">
+                  <i className="bi bi-twitter"></i>
+                </Link>
+                <Link to="#" className="facebook">
+                  <i className="bi bi-facebook"></i>
+                </Link>
+                <Link to="#" className="instagram">
+                  <i className="bi bi-instagram"></i>
+                </Link>
+                <Link to="#" className="instagram">
+                  <i className="bi bi-instagram"></i>
+                </Link>
+                <Link to="#" className="linkedin">
+                  <i className="bi bi-linkedin"></i>
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna veniam enim veniam illum dolore legam minim quorum culpa
+                amet magna export quem marada parida nodela caramase seza.
+              </p>
+              <form>
+                <input type="email" name="email" style={{ color: "black" }} />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  style={{ color: "black" }}
+                />
+              </form>
+            </div>
           </div>
-          <div>
-            <i></i>
-            <p>00961-71876126</p>
-          </div>
-        </div>
-        <div>
-          <a href="instagram.com">
-            instagram
-            <i></i>
-          </a>
-          <a href="facebook.com">
-            facebook
-            <i></i>
-          </a>
-          <a href="facebook.com">
-            instagram
-            <i></i>
-          </a>
         </div>
       </div>
     </div>
-    //     <ul class="card-wrapper">
-    //   <li class="card">
-    //     <img src='https://images.unsplash.com/photo-1611916656173-875e4277bea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
-    //     <h3><a href="">A Super Wonderful Headline</a></h3>
-    //     <p>Lorem ipsum sit dolor amit</p>
-    //   </li>
-    //   <li class="card">
-    //     <img src='https://images.unsplash.com/photo-1611083360739-bdad6e0eb1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
-    //     <h3><a href="">What a Fantabulous Title!</a></h3>
-    //     <p>Lorem ipsum sit dolor amit</p>
-    //   </li>
-    //   <li class="card">
-    //     <img src='https://images.unsplash.com/photo-1613230485186-2e7e0fca1253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
-    //     <h3><a href="">Positively Terrific Title</a></h3>
-    //     <p>Lorem ipsum sit dolor amit</p>
-    //   </li>
-    // </ul>
   );
 }
 
