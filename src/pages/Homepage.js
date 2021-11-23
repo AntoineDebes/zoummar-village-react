@@ -181,11 +181,18 @@ function Homepage() {
               />
             </div>
 
-                    <a
-                      href="/activities"
-                      className="btn-loadMore"
-                    >
-Load More                    </a>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <a href="/activities" className="btn-loadMore">
+                Load More
+              </a>
+            </div>
           </div>
         </div>
 
