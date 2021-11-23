@@ -628,7 +628,7 @@ div#preloader {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #3ec1d5;
+  background: green
 }
 #hero .btn-get-started:hover {
   background: #fff;
@@ -2487,4 +2487,16 @@ span.email-notes {
   .slider-content {
     padding: 0;
   }
+}
+.btn-loadMore{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: green;
 }

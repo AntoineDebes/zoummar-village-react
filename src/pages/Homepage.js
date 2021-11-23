@@ -79,10 +79,10 @@ function Homepage() {
                 <div className="carousel-container">
                   <div className="container">
                     <h2 className="animate__animated animate__fadeInDown">
-                      The Best Business Information{" "}
+                      Welcome to Zoummar Village{" "}
                     </h2>
                     <p className="animate__animated animate__fadeInUp">
-                      We're In The Business Of Helping You Start Your Business
+                      Enjoy your summer with a lifetime experience!
                     </p>
                     <a
                       href="#about"
@@ -98,10 +98,10 @@ function Homepage() {
                 <div className="carousel-container">
                   <div className="container">
                     <h2 className="animate__animated animate__fadeInDown">
-                      At vero eos et accusamus
+                      She Said Yes!
                     </h2>
                     <p className="animate__animated animate__fadeInUp">
-                      Helping Business Security & Peace of Mind for Your Family
+                      Reserve Our old houses for your Wedding.
                     </p>
                     <a
                       href="#about"
@@ -178,6 +178,12 @@ function Homepage() {
                 name="He/him"
               />
             </div>
+
+                    <a
+                      href="/activities"
+                      className="btn-loadMore"
+                    >
+Load More                    </a>
           </div>
         </div>
 
@@ -186,15 +192,13 @@ function Homepage() {
             <div className="row">
               <div className="col-md-12 col-sm-12 col-xs-12">
                 <div className="section-headline services-head text-center">
-                  <h2>Our Events</h2>
+                  <h2>Our Summer Events</h2>
                 </div>
               </div>
             </div>
             <HomepageServicesCard
-              title="Expert Coder"
-              text="will have to make sure the prototype looks finished by
-                        inserting text or photo.make sure the prototype looks
-                        finished by."
+              title="Barbecue nights"
+              text="Enjoy the best barbecue nights with your friends and family."
             />
             <HomepageServicesCard
               title="Expert Coder"
@@ -238,11 +242,10 @@ function Homepage() {
               <div className="px-5 py-5 py-lg-0">
                 <h2>working with us</h2>
                 <h5>
-                  Web Design, Ready Home, Construction and Co-operate
-                  Outstanding Buildings.
+                  Expore more about Zoummar Village, discover our history!
                 </h5>
-                <a href="#contact" className="ready-btn scrollto">
-                  Contact us
+                <a href="/contact" className="ready-btn scrollto">
+                  About Us
                 </a>
               </div>
             </div>
@@ -401,21 +404,6 @@ function Homepage() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="suscribe-area">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-                <div className="suscribe-text text-center">
-                  <h3>Welcome to our eBusiness company</h3>
-                  <a className="sus-btn" href="#">
-                    Get A quote
-                  </a>
                 </div>
               </div>
             </div>

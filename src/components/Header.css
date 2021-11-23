@@ -20,7 +20,7 @@
 }
 
 .header__container__logo {
-  width: 180px;
+  width: 200px;
 }
 
 .header__container__logo > img {
@@ -39,7 +39,7 @@
 .header__container__nav-pages > * {
   font-family: "RobotoRegular";
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 5;
   font-size: 0.95rem;
   color: black;
 }

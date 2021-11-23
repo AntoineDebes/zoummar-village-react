@@ -112,15 +112,15 @@ function Header() {
               id="basic-navbar-nav"
               className="override__container"
             >
-              <Nav className="me-auto">
+              <Nav className="me-auto" >
                 <Nav.Link as={Link} to="/">
                   Homepage
                 </Nav.Link>
                 <Nav.Link as={Link} to="/activities">
-                  activities
+                  Activities
                 </Nav.Link>
                 <Nav.Link as={Link} to="/restaurent">
-                  restaurent
+                  Restaurent
                 </Nav.Link>
                 <Nav.Link as={Link} to="/restaurent">
                   About-us
