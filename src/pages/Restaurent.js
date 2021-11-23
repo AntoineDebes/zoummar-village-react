@@ -47,8 +47,11 @@ function Restaurent() {
                 <span className="icon-bar"></span>
               </button>
             </div>
-            <div id="main-nav" className="collapse navbar-collapse">
-              <ul className="nav navbar-nav">
+            <div id="main-nav" className="" style={{ display: "block" }}>
+              <ul
+                className="nav navbar-nav"
+                style={{ display: "flex", flexDirection: "row" }}
+              >
                 <li>
                   <a href="index.html">Home</a>
                 </li>

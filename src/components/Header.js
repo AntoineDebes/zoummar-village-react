@@ -117,10 +117,10 @@ function Header() {
                   Homepage
                 </Nav.Link>
                 <Nav.Link as={Link} to="/activities">
-                  activities
+                  Activities
                 </Nav.Link>
                 <Nav.Link as={Link} to="/restaurent">
-                  restaurent
+                  Restaurent
                 </Nav.Link>
                 <Nav.Link as={Link} to="/restaurent">
                   About-us
