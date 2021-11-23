@@ -26,6 +26,7 @@ import "../css/owl-carousel.css";
 import "../css/templatemo-style.css";
 import HomepageServicesCard from "../components/HomepageServicesCard";
 import HomepageOurTeam from "../components/HomepageOurTeam";
+import { PicnicTwo, HikingNew, MountainBikes, Shooter } from "../imagesNew";
 
 function Homepage() {
   return (
@@ -154,28 +155,29 @@ function Homepage() {
             </div>
             <div className="row">
               <HomepageOurTeam
-                img={TeamTwo}
-                job="123"
-                link="facebook.com"
-                name="He/him"
+                img={PicnicTwo}
+                job=""
+                link="activitiesaftercard"
+                name="Picnic"
+              />
+
+              <HomepageOurTeam
+                img={HikingNew}
+                job=""
+                link="activitiesaftercard"
+                name="Hiking"
               />
               <HomepageOurTeam
-                img={TeamTwo}
-                job="123"
-                link="facebook.com"
-                name="He/him"
+                img={MountainBikes}
+                job=""
+                link="activitiesaftercard"
+                name="Mountain bikes"
               />
               <HomepageOurTeam
-                img={TeamTwo}
-                job="123"
-                link="facebook.com"
-                name="He/him"
-              />
-              <HomepageOurTeam
-                img={TeamTwo}
-                job="123"
-                link="facebook.com"
-                name="He/him"
+                img={Shooter}
+                job=""
+                link="activitiesaftercard"
+                name="Shooter"
               />
             </div>
 
