@@ -1,5 +1,6 @@
 import React from "react";
 import Proptypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function HomepageOurTeam({ img, link, name, job }) {
   return (
@@ -7,9 +8,9 @@ function HomepageOurTeam({ img, link, name, job }) {
       <div className="col-md-3 col-sm-3 col-xs-12">
         <div className="single-team-member">
           <div className="team-img">
-            <a href={link}>
-              <img src={img} alt="" />
-            </a>
+            <Link to={link}>
+              <img src={img} alt="" style={{ height: "10.5rem" }} />
+            </Link>
             <div className="team-social-icon text-center">
               <ul>
                 <li>
