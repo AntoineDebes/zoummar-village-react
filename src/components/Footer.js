@@ -11,12 +11,15 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 footer-info">
-              <h3>NewBiz</h3>
+              <h3>Zoummar</h3>
               <p>
-                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-                nada terra videa magna derita valies darta donna mare fermentum
-                iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-                fermentum leo. Amet volutpat consequat mauris nunc congue.
+              Our company has recently created a new eco-touristic concept for Annaya Village, called
+Zoummar Village a well thought unique concept that will constitute an urban
+hub for the camping, Picnic, historic houses and wooden bungalows visitors of Annaya.
+
+Zoummar Village is a new eco-concept, which will create a unique community,
+distinguished lifestyle and a better camping & picnic experience for the area.
+
               </p>
             </div>
 
@@ -24,33 +27,28 @@ function Footer() {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <Link to="#">Home</Link>
+                  <Link to="/Home">Home</Link>
                 </li>
                 <li>
-                  <Link to="#">About us</Link>
+                  <Link to="/Aboutus">About us</Link>
                 </li>
                 <li>
-                  <Link to="#">Services</Link>
+                  <Link to="/Activities">Activities</Link>
                 </li>
                 <li>
-                  <Link to="#">Terms of service</Link>
+                  <Link to="/Restaurent">Restaurent</Link>
                 </li>
-                <li>
-                  <Link to="#">Privacy policy</Link>
-                </li>
+                
               </ul>
             </div>
 
             <div className="col-lg-3 col-md-6 footer-contact">
               <h4>Contact Us</h4>
               <p>
-                A108 Adam Street <br />
-                New York, NY 535022
+                Annaya Zoummar village <br />
+                <strong>Phone:</strong> 81094831
                 <br />
-                United States <br />
-                <strong>Phone:</strong> +1 5589 55488 55
-                <br />
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong>zoummar@gmail.com
                 <br />
               </p>
 
@@ -76,18 +74,10 @@ function Footer() {
             <div className="col-lg-3 col-md-6 footer-newsletter">
               <h4>Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna veniam enim veniam illum dolore legam minim quorum culpa
-                amet magna export quem marada parida nodela caramase seza.
+              Camp Zoummar is the ideal setting for the special occasions and celebrations of any family, company, or community organization. We can accommodate groups of 25 to 3,000. Our facility offers open-air picnic shelters, wide open space for large corporate gatherings and a warming chalet with a kitchenette.
+
               </p>
-              <form>
-                <input type="email" name="email" style={{ color: "black" }} />
-                <input
-                  type="submit"
-                  value="Subscribe"
-                  style={{ color: "black" }}
-                />
-              </form>
+            
             </div>
           </div>
         </div>
