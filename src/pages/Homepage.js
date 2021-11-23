@@ -27,6 +27,7 @@ import "../css/templatemo-style.css";
 import HomepageServicesCard from "../components/HomepageServicesCard";
 import HomepageOurTeam from "../components/HomepageOurTeam";
 import { PicnicTwo, HikingNew, MountainBikes, Shooter } from "../imagesNew";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -85,12 +86,12 @@ function Homepage() {
                     <p className="animate__animated animate__fadeInUp">
                       Enjoy your summer with a lifetime experience!
                     </p>
-                    <a
-                      href="#about"
+                    <Link
+                      to="/activities"
                       className="btn-get-started scrollto animate__animated animate__fadeInUp"
                     >
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Carousel.Item>
@@ -104,12 +105,12 @@ function Homepage() {
                     <p className="animate__animated animate__fadeInUp">
                       Reserve Our old houses for your Wedding.
                     </p>
-                    <a
-                      href="#about"
+                    <Link
+                      to="/activities"
                       className="btn-get-started scrollto animate__animated animate__fadeInUp"
                     >
                       Get Started
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Carousel.Item>
