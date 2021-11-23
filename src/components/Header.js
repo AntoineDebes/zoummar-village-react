@@ -24,7 +24,9 @@ function Header() {
   const [show, setShow] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(true);
   const [agreeToTerms, setAgreeToTerms] = useState(false);
-  const { setUserCredential } = useUserCredential();
+
+  const { userCredential, setUserCredential } = useUserCredential();
+  const [username, setUsername] = useState();
   const {
     register,
     handleSubmit,
@@ -39,6 +41,11 @@ function Header() {
 
   const checkboxHandler = () => {
     setAgreeToTerms(!agreeToTerms);
+  };
+
+  const handleLogout = () => {
+    localStorage.clear();
+    setUsername(null);
   };
 
   const onSubmitLogin = async (data) => {
@@ -58,6 +65,7 @@ function Header() {
       console.log(res.data.user);
       if (res) {
         localStorage.setItem("UserCredential", JSON.stringify(res.data.user));
+        setUsername(res.data.user.name);
         setUserCredential(res.data.user);
         return setShow(false);
       } else {
@@ -67,8 +75,7 @@ function Header() {
 
   const onSubmitRegister = (data) => {
     let params = {
-      Name: "antoine",
-      UserName: data.username,
+      Name: data.username,
       Email: data.email,
       Password: data.password,
       Phone: "123112",
@@ -80,7 +87,8 @@ function Header() {
     }).then((res) => {
       if (res) {
         localStorage.setItem("UserCredential", res);
-        setUserCredential(res);
+        setUsername(data.username);
+        setUserCredential(data.username);
         setShow(false);
         return;
       }
@@ -127,13 +135,40 @@ function Header() {
                 </Nav.Link>
               </Nav>
               <Nav className="header__container__login--primary">
-                <button
-                  variant="primary"
-                  onClick={handleShow}
-                  className="nav__bar__login___btn"
-                >
-                  <FiLogIn /> Log-In
-                </button>
+                {!username ? (
+                  <button
+                    variant="primary"
+                    onClick={handleShow}
+                    className="nav__bar__login___btn"
+                  >
+                    <FiLogIn /> Log-In
+                  </button>
+                ) : (
+                  <>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        gap: "1.5rem",
+                      }}
+                    >
+                      <div style={{ color: "black" }}>{username}</div>
+                      <button
+                        onClick={handleLogout}
+                        style={{
+                          backgroundColor: "var(--primary-color)",
+                          color: "black",
+                          border: 0,
+                          padding: "0.3rem",
+                        }}
+                      >
+                        Lougout
+                      </button>
+                    </div>
+                  </>
+                )}
               </Nav>
             </Navbar.Collapse>
           </Container>

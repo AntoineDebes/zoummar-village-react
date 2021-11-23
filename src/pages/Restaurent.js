@@ -53,7 +53,7 @@ function Restaurent() {
                 style={{ display: "flex", flexDirection: "row" }}
               >
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/restaurent">Home</Link>
                 </li>
                 <li>
                   <Link to="/restaurent/menu">Our Menu</Link>
